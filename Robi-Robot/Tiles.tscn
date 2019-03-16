@@ -4,6 +4,42 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Left Top Corner" type="Sprite" parent="."]
+position = Vector2( -151.891, -3.06506 )
 texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 57.995, 75 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Left Top Corner"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Left Top Corner/StaticBody2D"]
+scale = Vector2( 2.81576, -2.5946 )
+
+[node name="Right Top Corner" type="Sprite" parent="."]
+position = Vector2( -79.6914, -0.681122 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 63.995, -1, 63, 65 )
+
+[node name="Ledge Left" type="Sprite" parent="."]
+position = Vector2( 100.324, 59.1684 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 132.995, 4, 67, 64 )
+
+[node name="Ledge Right" type="Sprite" parent="."]
+position = Vector2( 220.919, 58.381 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 185.997, 0.5, 71.5, 64 )
+
+[node name="Treetop" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 257.995, 4, 60, 59 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Treetop"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Treetop/StaticBody2D"]
+polygon = PoolVector2Array( -26.1198, -30.8051, 24.9644, -30.4645, 25.305, 5.97559, 25.305, 20.6197, 4.19019, 20.6197, 3.84962, 32.5394, 3.84962, 32.5394, -5.34554, 32.5394, -5.34554, 32.5394, -5.34554, 32.5394, -5.00498, 16.8736, -17.6058, 16.8736, -17.6058, 16.8736 )
 
